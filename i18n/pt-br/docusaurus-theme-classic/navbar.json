@@ -1,19 +1,15 @@
 {
   "title": {
-    "message": "My Site",
+    "message": "./index newsletter",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "My Site Logo",
+    "message": "Newsletter Logo",
     "description": "The alt text of navbar logo"
   },
-  "item.label.Tutorial": {
-    "message": "Tutorial",
-    "description": "Navbar item with label Tutorial"
-  },
-  "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
+  "item.label.Arquivo": {
+    "message": "Arquivo",
+    "description": "Navbar item with label Arquivo"
   },
   "item.label.GitHub": {
     "message": "GitHub",
