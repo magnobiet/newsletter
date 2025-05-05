@@ -1,9 +1,10 @@
 magnobiet:
+  page: false
   name: Magno F. B. Biét
   title: Analista de Sistemas Sênior @ CWI Software
-  url: https://github.com/magnobiet
   image_url: https://github.com/magnobiet.png
-  page: true
+  url: https://magnobiet.com
+  email: magno.biet@gmail.com
   socials:
-    x: magnobiet
     github: magnobiet
+    linkedin: magnobiet
