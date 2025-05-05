@@ -2,9 +2,14 @@ import type * as Preset from '@docusaurus/preset-classic';
 import type { Config } from '@docusaurus/types';
 import { themes as prismThemes } from 'prism-react-renderer';
 
+const title = './index';
+const tagline = 'Links, tendências e ferramentas para devs front-end, todo mês!';
+const copyright = `© ${new Date().getFullYear()} Magno Biét.`;
+const language = 'pt-BR';
+
 const config: Config = {
-  title: './index',
-  tagline: 'Links, tendências e ferramentas para devs front-end, todo mês!',
+  title,
+  tagline,
   favicon: 'https://favicon.magnobiet.com/e/📰',
   url: 'https://newsletter.magnobiet.com',
   baseUrl: '/',
@@ -13,10 +18,10 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
-    defaultLocale: 'pt-br',
-    locales: ['pt-br'],
+    defaultLocale: language,
+    locales: [language],
     localeConfigs: {
-      'pt-br': {
+      [language]: {
         label: 'Português (Brasil)',
         direction: 'ltr',
       },
@@ -24,17 +29,23 @@ const config: Config = {
   },
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
         docs: false,
         blog: {
+          blogTitle: 'Newsletter',
+          blogSidebarTitle: 'Arquivo',
           path: 'newsletter',
           routeBasePath: '/archive',
           showReadingTime: true,
           postsPerPage: 12,
           feedOptions: {
+            title,
+            description: tagline,
             type: ['rss', 'atom'],
             xslt: true,
+            copyright,
+            language,
           },
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -54,17 +65,16 @@ const config: Config = {
         src: 'https://favicon.magnobiet.com/e/📰',
       },
       items: [
-        { to: '/archive', label: 'Arquivo', position: 'left' },
         {
-          href: 'https://github.com/magnobiet/newsletter',
-          label: 'GitHub',
-          position: 'right',
+          to: '/archive',
+          label: 'Arquivo',
+          position: 'left'
         },
       ],
     },
     footer: {
-      style: 'dark',
-      copyright: `© ${new Date().getFullYear()} Magno Biét.`,
+      style: 'light',
+      copyright
     },
     prism: {
       theme: prismThemes.github,

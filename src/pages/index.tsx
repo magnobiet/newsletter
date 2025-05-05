@@ -17,16 +17,15 @@ function HomepageHeader() {
         </Heading>
 
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-
       </div>
-    </header >
+    </header>
   );
 }
 
 export default function Home(): ReactNode {
   return (
     <Layout
-      title={`./index`}
+      title="Newsletter"
       description="Links, tendências e ferramentas para devs front-end, todo mês!">
 
       <HomepageHeader />
