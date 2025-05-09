@@ -36,7 +36,7 @@ const config: Config = {
           blogTitle: 'Newsletter',
           blogSidebarTitle: 'Arquivo',
           path: 'newsletter',
-          routeBasePath: '/archive',
+          routeBasePath: '/',
           showReadingTime: true,
           postsPerPage: 12,
           feedOptions: {
@@ -59,16 +59,16 @@ const config: Config = {
   ],
   themeConfig: {
     navbar: {
-      title: './index newsletter',
+      title: 'Newsletter',
       logo: {
         alt: 'Newsletter Logo',
         src: 'https://favicon.magnobiet.com/e/📰',
       },
       items: [
         {
-          to: '/archive',
-          label: 'Arquivo',
-          position: 'left'
+          href: 'https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7289953302857801730',
+          label: 'Assinar no LinkedIn',
+          position: 'left',
         },
       ],
     },
