@@ -1,0 +1,155 @@
+---
+slug: s01e05
+title: S01E05 - Aquele com os links de maio
+authors: [magnobiet]
+---
+
+Fala, devs!
+
+A quinta edição da newsletter finalmente tá no ar! Eu sei que demorou um pouquinho pra sair - vida de dev, né?
+
+Agora vocês podem ler todas as edições direto pelo site [newsletter.magnobiet.com](https://newsletter.magnobiet.com/), sem precisar passar pelo LinkedIn. Minha intenção com isso é justamente facilitar a vida de vocês, pra cada um acessar o conteúdo como achar melhor.
+
+Confira os principais destaques do mês de maio. Os links estão abaixo — fique à vontade para comentar o que achou!
+
+{/* truncate */}
+
+---
+
+## HTML
+
+### Elementos HTML5 que Você Não Sabia que Precisava
+
+[Max Prilutskiy](https://www.linkedin.com/in/maxprilutskiy/) explora oito elementos HTML5 subutilizados, como `<dialog>`, `<details>`, `<summary>`, `<meter>` e `<output>`. Eles oferecem soluções nativas para modais, accordions e indicadores de progresso, reduzindo a dependência de JavaScript e simplificando o desenvolvimento. https://dev.to/maxprilutskiy/html5-elements-you-didnt-know-you-need-gan
+
+## CSS
+
+### Unidades de Line-Height no WebKit
+
+Jen Simmons detalha as diferenças entre unidades de `line-height` (px, %, rem, unitless) no WebKit, explicando seus impactos na tipografia e acessibilidade. Com exemplos práticos, o artigo ajuda a criar layouts consistentes e acessíveis em diferentes navegadores. https://webkit.org/blog/16831/line-height-units
+
+### Margin Trim: Simplificando Espaçamentos em CSS
+
+O artigo apresenta a propriedade `margin-trim` no WebKit, que elimina margens indesejadas em layouts com flexbox ou grid. Exemplos práticos mostram como ela garante consistência visual sem hacks, facilitando o design de interfaces mais limpas. https://webkit.org/blog/16854/margin-trim/
+
+### Sombras de Rolagem Modernas Usando Animações Orientadas por Scroll
+
+Kevin Hamer combina `mask`, `@property` e `animation-timeline` para criar sombras dinâmicas em elementos scrolláveis, como tabelas horizontais. A técnica, sem JavaScript, suporta temas claro/escuro e melhora a UX em dispositivos móveis. https://css-tricks.com/modern-scroll-shadows-using-scroll-driven-animations/
+
+### Criando Formas de Blob Usando Clip-Path
+
+O artigo de Temani Afif no Frontend Masters ensina a usar `clip-path` para criar formas de blob em layouts responsivos. Com exemplos práticos e dicas de implementação, é ideal para elevar o design visual com CSS. https://frontendmasters.com/blog/creating-blob-shapes-using-clip-path-shape/
+
+## JavaScript
+
+### Construindo um Sistema de Upload de Imagens Offline-Friendly
+
+[Amejimaobari Ollornwi](https://www.linkedin.com/in/amejimaobari-ollornwi-01803b189/) mostra como criar um sistema de upload de imagens offline usando PWA, IndexedDB, service workers e Background Sync API. A solução garante uploads confiáveis mesmo sem conexão, enfileirando e reexecutando automaticamente. https://www.smashingmagazine.com/2025/04/building-offline-friendly-image-upload-system/
+
+### O Poder da Sintaxe Spread e Rest em JavaScript
+
+[Matt Smith](https://linkedin.com/in/allthingssmitty) explica como as sintaxes spread e rest simplificam a manipulação de arrays, objetos e argumentos em funções. Com exemplos práticos, o artigo destaca como evitar armadilhas com referências mutáveis. https://allthingssmitty.com/2025/05/05/the-power-of-spread-and-rest-patterns-in-javascript.md/
+
+### A Ergonomia dos Generators Está Me Conquistando
+
+[Alex MacArthur](https://www.linkedin.com/in/alexmacarthur/) explora *generators* em JavaScript, mostrando como simplificam iteradores e iteráveis personalizados. Focando nos protocolos `iterator` e `iterable`, o artigo demonstra como essas ferramentas tornam o código mais expressivo e modular. https://macarthur.me/posts/generators/
+
+### Nova Palavra Chave no JavaScript (`using`)
+
+[Erick Wendel](https://www.linkedin.com/in/erickwendel/) apresenta a palavra-chave `using` já disponível no Node.js 20+, que automatiza a liberação de recursos como conexões e arquivos via `Symbol.dispose` e `Symbol.asyncDispose`. Isso reduz *boilerplate* e vazamentos de memória. https://youtu.be/u0bPVafv-Ak?si=B5VnOSJxovv4Rhja
+
+### Organize Suas Dependências com PNPM Catalogs
+
+Anthony Fu propõe usar PNPM Catalogs para categorizar dependências em projetos JavaScript (test, lint, build, etc.). Isso organiza o *package.json*, facilita manutenção e inclui a extensão VS Code “PNPM Catalog Lens” para melhor experiência. https://antfu.me/posts/categorize-deps
+
+### Micro Frontends: A Jornada da Dunelm Até Agora
+
+A [Dunelm Technology](https://engineering.dunelm.com/) adotou Micro Frontends para melhorar desempenho e simplificar o código, reduzindo o tempo de entrega e acelerando o site. Apesar de desafios como complexidade, a transição foi bem-sucedida, com foco na reestruturação do checkout. https://engineering.dunelm.com/micro-frontends-the-story-so-far-758b597ce7a8
+
+## TypeScript
+
+### TSConfig Bases para Projetos TypeScript
+
+Este repositório oferece configurações TSConfig prontas para Node.js, React e mais. Com opções como `strict` e `moduleResolution`, permite customização via `extends`, garantindo consistência e produtividade em projetos. https://github.com/tsconfig/bases
+
+### Extensão Total TypeScript para VS Code
+
+A extensão de Matt Pocock para VS Code traduz erros do TypeScript em mensagens claras, sugere sintaxes e permite marcar tópicos como aprendidos, personalizando o aprendizado para devs. https://www.totaltypescript.com/vscode-extension
+
+### TS-Reset: Melhorando o TypeScript Padrão
+
+TS-Reset, de Matt Pocock, ajusta tipos padrão do TypeScript, como `Array.prototype.filter`, para maior precisão. Ideal para quem busca tipagem robusta sem configurações complexas. https://www.totaltypescript.com/ts-reset
+
+### TypeScript Native Previews: Primeiros Passos com o Novo Compilador
+
+O novo compilador nativo do TypeScript, disponível via `npm install -D @typescript/native-preview`, oferece até 10x mais desempenho. Inclui o executável `tsgo` e uma extensão experimental para VS Code. https://devblogs.microsoft.com/typescript/announcing-typescript-native-previews/
+
+## React
+
+### O que Faz o `use-client` no React?
+
+Dan Abramov explica a diretiva `use-client` no React, usada para marcar componentes que rodam no cliente com Server Components. Com exemplos práticos, o artigo aborda implicações, especialmente no Next.js. https://overreacted.io/what-does-use-client-do/
+
+### Adicionando Efeitos Sonoros com react-sounds
+
+A Aedilic Labs apresenta a biblioteca `react-sounds`, que simplifica a adição de efeitos sonoros em apps React. Com suporte a *lazy loading* e sons offline, é ideal para melhorar a interatividade. https://www.reactsounds.com/
+
+## Angular
+
+### Construindo uma Aplicação Angular 19 Profissional com Signals e Services
+
+Cristian Sifuentes ensina a criar apps Angular 19 usando Signals para reatividade e Services para estado. O artigo cobre boas práticas, consumo de APIs e exemplos reais, ideal para explorar o Angular moderno. https://dev.to/cristiansifuentes/building-a-professional-angular-19-app-using-signals-and-services-3gl4
+
+### ngx-vflow
+
+O ngx-vflow é uma biblioteca open-source para Angular 16+ que facilita a criação de interfaces baseadas em nós, como diagramas. Personalizável com TypeScript, suporta múltiplas entradas/saídas e layouts forçados. https://www.ngx-vflow.org/getting-started/what-is-ngx-vflow
+
+### Anunciada a Versão 20 do Angular
+
+O Angular 20 traz APIs reativas estáveis, integração com Chrome DevTools, suporte a componentes standalone e novas APIs experimentais para estado assíncrono e GenAI, melhorando a experiência do desenvolvedor. https://blog.angular.dev/announcing-angular-v20-b5c9c06cf301
+
+## UX, UI e Acessibilidade
+
+### Carrosséis CSS com Foco em Acessibilidade
+
+Sara Soueidan ensina a criar carrosséis acessíveis com CSS, usando ARIA, navegação por teclado e controles semânticos. O artigo prioriza compatibilidade com leitores de tela e inclusão. https://www.sarasoueidan.com/blog/css-carousels-accessibility/
+
+### Relatório de Acessibilidade 2025: Email Markup Consortium
+
+Em 2025, 99,89% dos e-mails analisados tiveram falhas graves de acessibilidade. Apenas 21 e-mails, de duas marcas, passaram em testes automatizados. Ferramentas de auditoria e suporte a padrões são urgentes. https://emailmarkup.org/en/reports/accessibility/2025/
+
+## Segurança
+
+### Passkeys Explicados de Forma Simples
+
+Troy Hunt explica passkeys, substitutos de senhas baseados em criptografia. O artigo detalha sua integração em interfaces web, benefícios de segurança e impactos na UX. https://www.troyhunt.com/passkeys-for-normal-people/
+
+### Protect.js: Criptografia de Dados com Chaves Únicas por Registro
+
+Protect.js é uma biblioteca TypeScript para criptografia com chaves únicas por registro, suportando operações em massa e criptografia pesquisável no PostgreSQL. Ideal para conformidade com SOC2 e ISO27001. https://github.com/cipherstash/protectjs
+
+### Roadmap de Segurança em Nuvem para Startups - AWS Security Digest
+
+O guia da AWS para startups detalha como criar um roadmap de segurança em nuvem, priorizando riscos e revisões periódicas. Modelos de maturidade ajudam a evitar brechas comuns. https://awssecuritydigest.com/articles/cloud-security-roadmap-for-startups
+
+### Postman Está Registrando Todos os Seus Segredos e Variáveis de Ambiente
+
+O Postman registra variáveis de ambiente, incluindo segredos, em logs enviados aos seus servidores, mesmo quando marcadas como protegidas. O autor recomenda bloquear endpoints de análise para maior segurança. https://anonymousdata.medium.com/postman-is-logging-all-your-secrets-and-environment-variables-9c316e92d424
+
+## Inteligência Artificial
+
+### Modelos de Linguagem Estão Me Deixando Mais Burro
+
+Vincent Cheng reflete sobre como a dependência de LLMs, como Claude e Gemini, pode prejudicar o aprendizado profundo em programação. Ele questiona o impacto da autonomia das IAs na profissão. https://vvvincent.me/llms-are-making-me-dumber/
+
+### GitHub Copilot Coding Agent em Versão Pública
+
+O GitHub Copilot Coding Agent, agora em *public preview* para usuários Pro+ e Enterprise, automatiza correções de bugs, adição de recursos e documentação. Integrado ao Copilot Chat, opera via Web, CLI e apps móveis. https://github.blog/changelog/2025-05-19-github-copilot-coding-agent-in-public-preview/
+
+---
+
+Não esqueça de compartilhar com a equipe e deixar seu feedback!
+
+Quer mandar algo pra próxima edição? Envie seu link [aqui](https://github.com/magnobiet/newsletter/issues/6) ou envie a sua sugestão para o e-mail [newsletter@magnobiet.com](mailto:newsletter@magnobiet.com).
+
+Até a próxima edição!
