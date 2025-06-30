@@ -1,0 +1,223 @@
+---
+slug: s01e06
+title: S01E06 - Aquele com os links de junho
+authors: [magnobiet]
+---
+
+Fala, devs!
+
+A sexta edição da nossa newsletter tá no ar, com um resumo prático dos destaques de junho! Tem dicas de HTML, CSS, JavaScript, React, Angular e mais. Confira os links abaixo, mande sugestões pelo [GitHub](https://github.com/magnobiet/newsletter/issues/7) ou para o e-mail [newsletter@magnobiet.com](mailto:newsletter@magnobiet.com), e compartilhe com o time para todos ficarem atualizados!
+
+{/* truncate */}
+
+---
+
+## HTML
+
+### Criatividade com o Elemento HTML `<dialog>`
+
+Andy Clarke, explora o elemento `<dialog>` HTML, indo além do básico. Com CSS (`::backdrop`, `backdrop-filter`, animações), dá pra criar dialogs únicas, mantendo acessibilidade. https://css-tricks.com/getting-creative-with-html-dialog/
+
+### Favicons SVG em Ação
+
+Philippe Bernard, no CSS-Tricks, destaca os favicons em SVG, que se adaptam ao modo escuro com `@media (prefers-color-scheme: dark)`. Superam PNGs em escalabilidade e responsividade, apesar de tamanhos maiores. Ferramentas como RealFaviconGenerator simplificam a implementação. https://css-tricks.com/svg-favicons-in-action/
+
+## CSS
+
+### Pesquisa "State of CSS 2025"
+
+A pesquisa "State of CSS 2025" da Devographics analisa a adoção de novidades como *subgrid*, `:has()` e *scroll-driven animations*. Aberta a todos que usam CSS, ajuda a entender tendências e orientar o foco de devs, além de influenciar o roadmap dos navegadores. https://survey.devographics.com/en-US/survey/state-of-css/2025
+
+### Efeito Spotlight Interativo com CSS
+
+Amit Sheen, no Frontend Masters, ensina a criar efeitos *spotlight* interativos com CSS e pouco JavaScript. Usa coordenadas do mouse em propriedades customizadas, `radial-gradient` e filtros como *blur* e `mix-blend-mode` para visuais dinâmicos, otimizando a experiência no front-end. https://frontendmasters.com/blog/css-spotlight-effect/
+
+### Construindo um Framework CSS Próprio
+
+Snehasish Konger detalha a criação do NimbleCSS, um framework CSS híbrido. Aborda arquitetura, componentes, *design tokens*, responsividade, *dark mode* e automação com PostCSS. https://scientyficworld.org/building-my-own-css-framework/
+
+### Decorações de Lacunas em CSS
+
+O Chrome Developer Blog apresenta decorações de *gap* em layouts *flex*, *grid* e *multi-column*. Com propriedades como `column-rule` e `row-rule`, elimina *hacks*, simplificando a estilização. Requer Chrome/Edge 139+ com flag experimental. https://developer.chrome.com/blog/gap-decorations?hl=pt-br
+
+### Animações Controladas por Scroll Apenas com CSS
+
+Saron Yitbarek ensina animações *scroll-driven* com CSS, usando *keyframes*, `scroll()` e `view()` para efeitos baseados na rolagem. A propriedade `animation-range` dá precisão, eliminando JavaScript. Inclui dicas de acessibilidade. https://webkit.org/blog/17101/a-guide-to-scroll-driven-animations-with-just-css/
+
+### Efeito "Liquid Glass" em CSS
+
+Atlas Pup Labs recria o efeito "Liquid Glass" da Apple com CSS e filtros SVG. Usa `box-shadow`, `backdrop-filter`, `feTurbulence` e `feDisplacementMap` para refrações e aberrações cromáticas. Atenção à compatibilidade e performance da GPU. https://atlaspuplabs.com/blog/liquid-glass-but-in-css
+
+## JavaScript
+
+### A História do JavaScript
+
+A Deno traça a evolução do JavaScript, desde 1995 (Brendan Eich, Netscape) até a padronização ECMAScript. Cita AJAX, jQuery, V8, Node.js e *runtimes* como Deno e Bun, que moldaram o front-end moderno. Uma leitura essencial para entender o JS. https://deno.com/blog/history-of-javascript
+
+### ECMAScript 2025: Novas Funcionalidades
+
+A 2ality.com detalha o ECMAScript 2025, aprovado em 25 de junho. Inclui *Import attributes*, *JSON modules*, métodos para *Iterators* e *Set*, `RegExp.escape()`, *named capture groups* e `Promise.try()`. Essas features aprimoram o desenvolvimento com JS mais robusto. https://2ality.com/2025/06/ecmascript-2025.html
+
+### Atualizações do TC39 no JavaScript
+
+A Deno destaca avanços do TC39, como *Explicit Resource Management* (`using`), `Array.fromAsync` e `Error.isError` (Stage 4). Inclui *Immutable ArrayBuffer* (Stage 3) e `Number.prototype.clamp` (Stage 2), tornando o JS mais seguro e eficiente. https://deno.com/blog/updates-from-tc39
+
+### document.currentScript: Entendendo o Script em Execução
+
+Alex MacArthur explora `document.currentScript`, que acessa o elemento `<script>` em execução. Útil para configurações em *scripts* embarcados, mas retorna `null` em módulos ES. Uma ferramenta prática para devs em contextos específicos, com bom suporte em browsers. https://macarthur.me/posts/current-script/
+
+### Guia de Go para Desenvolvedores JavaScript
+
+Prateek Surana compara Go e JS/TS, abordando sintaxe, tipagem, erros e concorrência (*goroutines*). Explica compilação do Go vs. interpretação do JS, útil para devs que querem explorar backend e expandir suas habilidades. https://prateeksurana.me/blog/guide-to-go-for-javascript-developers/
+
+### Revisitando o JavaScript Legado
+
+Trevor I. Lasn revisita o JS de 2006-2015, destacando soluções criativas com jQuery, `XMLHttpRequest` e padrões pré-ES6. Mostra a evolução do front-end, inspirando desenvolvedores a valorizar a engenhosidade do passado na construção da web moderna. https://www.trevorlasn.com/blog/revisiting-legacy-javascript
+
+### JavaScript Mais Confiável com Optional Chaining
+
+Matt Smith explica o *optional chaining* (`?.`), que evita erros em propriedades aninhadas, retornando `undefined` se nulo. Simplifica *checks* em APIs e React, tornando o código mais limpo e robusto. https://allthingssmitty.com/2025/06/02/write-more-reliable-javascript-with-optional-chaining/
+
+### Exploring JavaScript (ES2025 Edition)
+
+O guia de Axel Rauschmayer cobre o JS até ES2025, ideal para iniciantes e atualizações. Gratuito online, com exercícios e *flashcards*, é um recurso valioso para devs aprenderem ou revisarem features modernas de forma prática. https://exploringjs.com/js/
+
+### Práticas a Evitar em JavaScript
+
+A WaspDev lista práticas a evitar no JS, como `innerHTML` (use `innerText`/`textContent`), `JSON.parse(JSON.stringify())` (prefira `structuredClone()`) e `eval()`. Recomenda `Map`, `let`/`const`, `===` e *template literals* para um código mais confiável. https://waspdev.com/articles/2025-06-13/things-to-avoid-in-javascript
+
+## TypeScript
+
+### ts-check-perf: Medindo Performance de Type-checking TS
+
+A ferramenta `ts-check-perf` de Romeerez mede a velocidade de *type-checking* em TypeScript. Executa testes repetidos para identificar gargalos, usando `measureTime` e `measureSpeed`. Ajuda devs a otimizarem a compilação em projetos complexos. https://github.com/romeerez/ts-check-perf
+
+## React
+
+### Partycles
+
+Partycles é uma biblioteca React com 19 animações de partículas via hook `useReward`. Leve, personalizável e compatível com Next.js/Gatsby, é ideal para adicionar efeitos visuais sem comprometer performance. https://jonathanleane.github.io/partycles/
+
+### Boilerplate de Extensão Chrome (React, Vite)
+
+O *boilerplate* de Jonghakseo para extensões Chrome usa React, Vite e TypeScript, com Turborepo, Tailwindcss, i18n e testes E2E. Otimiza o desenvolvimento de extensões. https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite
+
+### Como Consumir APIs em React com Fetch e Async/Await
+
+Artigos explicam o uso de `fetch()` com *async/await* em React para chamadas de API. Com `useEffect` e `try...catch`, gerencia estados e erros, garantindo código legível e eficiente para consumir dados dinâmicos. http://blog.codeminer42.com/how-to-consume-apis-in-react-using-fetch-and-async-await/
+
+### O Estado do React e a Comunidade em 2025
+
+Mark Erikson analisa o React em 2025, líder em UI, mas com comunidade dividida. Destaca React 19 (*Server Components*) e debates sobre frameworks. https://blog.isquaredsoftware.com/2025/06/react-community-2025/
+
+### Zero: Uma Nova Abordagem de Sincronização de Dados
+
+Zero é um *sync engine* com sincronização parcial, otimizando dados no front-end sem limites de IndexedDB. Substitui TanStack Query, oferecendo *caching* e *updates* otimistas. Compatível com backends como Postgres, é ideal para interfaces dinâmicas. https://jjenzz.com/zero-is-not-local-first-its-better/
+
+## Angular
+
+### RFC - Mascote Oficial do Angular
+
+A discussão #61733, de MarkTechson, propõe um mascote para o Angular, como um "Angular shaped character". Busca engajar a comunidade para criar um símbolo que represente o framework, complementando o logo e fortalecendo o reconhecimento. https://github.com/angular/angular/discussions/61733
+
+### Angular 20: Novas Features e Melhorias
+
+Angular 20 traz `linkedSignal` para estados e `httpResource` (experimental) para HTTP declarativo. A hidratação incremental estabiliza, reduzindo *bundle size*. Melhorias em *binding APIs* e integração com IA tornam o desenvolvimento mais eficiente. https://blog.logrocket.com/angular-v20-update/
+
+### Desenvolvendo com IA no Angular
+
+O Angular.dev agora oferece recursos para gerar código com LLMs, com *prompts* personalizados e arquivos `llms.txt`. Ajuda LLMs a criarem código Angular moderno, otimizando a produtividade de devs com IA de forma prática. https://angular.dev/ai/develop-with-ai
+
+### RFC - Depreciação de `@angular/animations`
+
+A RFC #62212 sugere depreciar `@angular/animations`, substituindo por `animate.in` e `animate.out` nativos. Reduz *bundle size*, melhora performance e permite integração com *Anime.js* ou *GSAP*. A comunidade pode opinar. https://github.com/angular/angular/discussions/62212
+
+## Node.js
+
+### Usando await no Top-Level em ES Modules
+
+O *top-level await* (ES2022) simplifica código assíncrono em ES Modules, eliminando IIFEs. Permite *fetch* e *dynamic imports* diretos, disponível no Node.js v16+ e browsers modernos. http://allthingssmitty.com/2025/06/16/using-await-at-the-top-level-in-es-modules/
+
+### Profiling de Aplicações Node.js com VS Code
+
+Pavel Romanov explica como fazer *profiling* de Node.js no VS Code, identificando gargalos como *CPU-intensive tasks* e *memory leaks*. Usa CPU e Heap Profiles para otimizar diretamente no editor, uma solução prática para front-ends e back-ends. https://pavel-romanov.com/profiling-nodejs-application-with-vs-code
+
+## Pacotes, ferramentas e repositórios
+
+### FFmpeg na Vercel
+
+O repositório `vercel-labs/ffmpeg-on-vercel` mostra como rodar FFmpeg na *Fluid compute* da Vercel com `ffmpeg-static`. Ideal para processamento de mídia, recomenda ajustar CPU/RAM via `vercel.json` para otimizar performance. https://github.com/vercel-labs/ffmpeg-on-vercel
+
+### Orange ORM
+
+Orange ORM é um *Object Relational Mapper* para Node.js, Bun e Deno, com suporte a TypeScript. Oferece *Rich Querying* e *Active Record* sem *code generation*. Funciona no browser via Express.js, simulando uma REST API segura. https://orange-orm.io/
+
+### tz-lookup
+
+A biblioteca `tz-lookup` da PhotoStructure estima *timezones* por latitude e longitude. Otimizada para browsers, prioriza velocidade e eficiência de memória. Inclui tipos TypeScript, mas sacrifica precisão absoluta, útil para interfaces com dados geográficos. https://github.com/photostructure/tz-lookup
+
+### Baseline para VS Code
+
+O VS Code integra o Baseline, resumindo compatibilidade de navegadores para CSS, HTML, etc., com dados do MDN e Can I Use. Facilita decisões sobre *polyfills* e *progressive enhancement*, aumentando a produtividade de devs no editor. https://web.dev/blog/baseline-vscode
+
+### Croner
+
+Croner é uma biblioteca JS/TS para agendar funções ou avaliar *cron expressions*. Compatível com Node.js, Deno, Bun e browsers, suporta *time zones* e funções assíncronas. Sem dependências, é robusta para agendamentos na interface. https://croner.56k.guru/
+
+### syntax-highlight-element
+
+O `syntax-highlight-element` é um *web component* que usa a CSS Custom Highlight API para *syntax highlighting*. Suporta HTML, CSS, JS e temas, integrável via npm/CDN. Ideal para devs que precisam destacar código com performance nativa. https://andreruffert.github.io/syntax-highlight-element/
+
+## UX, UI e acessibilidade
+
+### Explorando o ecossistema OKLCH e suas ferramentas
+
+As ferramentas OKLCH da Evil Martians (color picker, Harmonizer, Polychrom, apcach, plugins Figma) criam paletas consistentes com contraste acessível e suporte P3. Perfeito para devs que buscam design confiável e temas dinâmicos. https://evilmartians.com/chronicles/exploring-the-oklch-ecosystem-and-its-tools
+
+### Gerador de fontes legais e estilosas online
+
+Ferramenta gratuita transforma texto em 180+ estilos Unicode (cursiva, bubble, glitch), ideal para bios e posts. Apesar de criativa, não é acessível, exigindo cuidado em projetos que priorizem usabilidade. https://fontgenerator.cool/
+
+### Liquid Glass da Apple e os desafios à acessibilidade
+
+O Liquid Glass do WWDC 2025, usado em iOS 26 e macOS Tahoe, tem efeitos visuais refinados, mas baixa legibilidade, violando heurísticas de acessibilidade. Front-ends devem equilibrar estética e usabilidade ao replicar esses efeitos. https://reverttosaved.com/2025/06/10/liquid-glass-apple-vs-accessibility/
+
+## Segurança
+
+### Segurança de Dados no Next.js
+
+A documentação do Next.js aborda segurança de dados detalhadamente. Com *React Server Components*, o *data fetching* exige novas práticas. Recomenda-se *Data Access Layer* (DAL) para centralizar lógica e validação, evitando vazamento de dados sensíveis com *React Taint APIs* e `server-only`. As *Server Actions* trazem segurança para mutações. https://nextjs.org/docs/app/guides/data-security
+
+### Privado
+
+Privado é uma ferramenta *open source* para *Static Scanning*, detectando vulnerabilidades de dados no código. Gera relatórios de privacidade e mapeia 110+ elementos pessoais. https://github.com/Privado-Inc/privado
+
+## Inteligência Artificial
+
+### Navegador AI Dia da The Browser Company chega em beta para Mac
+
+O navegador Dia, da The Browser Company, integra um assistente AI que resume páginas, compara abas e auxilia em e-mails e compras. Prioriza privacidade com dados criptografados localmente. Disponível em beta para usuários Arc no macOS. https://9to5mac.com/2025/06/11/dia-the-browser-companys-ai-first-browser-launches-mac-beta/
+
+### Construindo servidor MCP com Nx
+
+Max Kless ensina a criar um servidor MCP em um monorepo Nx, expondo projetos, gerando ferramentas via SDK e testando com Inspector. Suporta ações de IA em IDEs como VS Code. https://nx.dev/blog/building-mcp-server-with-nx
+
+### Introdução ao Gemini CLI: agente open-source da Google para terminais
+
+O Gemini CLI da Google usa o Gemini 2.5 Pro no terminal para *coding*, correção de bugs e geração de conteúdo. Oferece 60 requisições/minuto gratuitas, com integração ao Code Assist. https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/
+
+### O que acontece quando LLMs ficam sem dados úteis?
+
+A Forbes alerta que LLMs podem esgotar dados úteis até 2026, sugerindo *synthetic data* e *multimodal training* para evitar *model collapse*. O *quantum computing* é uma promessa para otimizar dados. https://www.forbes.com/sites/sap/2025/06/25/what-happens-when-llms-run-out-of-useful-data/
+
+## Podcasts
+
+<iframe style={{ borderRadius: '12px' }} src="https://open.spotify.com/embed/episode/3LbRytQyMvuASwbq8GWLNu?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+---
+
+Não esqueçam de compartilhar com a equipe e deixar o feedback!
+
+Quer sugerir algo para a próxima edição? Envie seu link no [Github](https://github.com/magnobiet/newsletter/issues/7) ou mande para o e-mail [newsletter@magnobiet.com](mailto:newsletter@magnobiet.com).
+
+Até a próxima!
